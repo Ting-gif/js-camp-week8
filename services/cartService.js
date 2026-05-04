@@ -141,8 +141,8 @@ function displayCart(cart) {
         ${index+1}. ${item.product.title}
         
         數量：${item.qty}
-        單價：${formatCurrency(item.product.price)}
-        小計：${formatCurrency(item.product.price * item.qty)}
+        單價：${formatCurrency(item.product.origin_price)}
+        小計：${formatCurrency(item.product.origin_price * item.quantity)}
         ----------------------------------------
         商品總計：${formatCurrency(cart.total)}
         折扣後金額：${formatCurrency(cart.finalTotal)}
